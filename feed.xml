@@ -3,10 +3,30 @@
     <title>VINCE自习室</title>
     <link href="https://vincezw.github.io/feed.xml" rel="self" />
     <link href="https://vincezw.github.io" />
-    <updated>1970-01-01T08:00:00+08:00</updated>
+    <updated>2022-07-07T17:07:09+08:00</updated>
     <author>
         <name>ZW</name>
     </author>
     <id>https://vincezw.github.io</id>
 
+    <entry>
+        <title>sadasda</title>
+        <author>
+            <name>ZW</name>
+        </author>
+        <link href="https://vincezw.github.io/sadasda.html"/>
+        <id>https://vincezw.github.io/sadasda.html</id>
+
+        <updated>2022-07-07T17:07:09+08:00</updated>
+            <summary>
+                <![CDATA[
+                    sfasf ffffffffffffffffffffffasfdasfasfaasd
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>sfasf ffffffffffffffffffffffasfdasfasfaasd</p>
+            ]]>
+        </content>
+    </entry>
 </feed>
