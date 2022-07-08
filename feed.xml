@@ -3,29 +3,38 @@
     <title>VINCE自习室</title>
     <link href="https://vincezw.github.io/feed.xml" rel="self" />
     <link href="https://vincezw.github.io" />
-    <updated>2022-07-07T17:07:09+08:00</updated>
+    <updated>2022-07-08T17:35:08+08:00</updated>
     <author>
-        <name>ZW</name>
+        <name>Vince</name>
     </author>
     <id>https://vincezw.github.io</id>
 
     <entry>
-        <title>sadasda</title>
+        <title>啊是德国法国</title>
         <author>
-            <name>ZW</name>
+            <name>Vince</name>
         </author>
-        <link href="https://vincezw.github.io/sadasda.html"/>
-        <id>https://vincezw.github.io/sadasda.html</id>
+        <link href="https://vincezw.github.io/a-shi-de-guo-fa-guo.html"/>
+        <id>https://vincezw.github.io/a-shi-de-guo-fa-guo.html</id>
+            <category term="精选"/>
 
-        <updated>2022-07-07T17:07:09+08:00</updated>
+        <updated>2022-07-08T17:35:08+08:00</updated>
             <summary>
                 <![CDATA[
-                    sfasf ffffffffffffffffffffffasfdasfasfaasd
+                    这是大标题 撒啊大风格我是个
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>sfasf ffffffffffffffffffffffasfdasfasfaasd</p>
+                
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://vincezw.github.io/media/posts/8/20220708-170949045-2.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://vincezw.github.io/media/posts/8/responsive/20220708-170949045-2-xs.png 300w ,https://vincezw.github.io/media/posts/8/responsive/20220708-170949045-2-sm.png 480w ,https://vincezw.github.io/media/posts/8/responsive/20220708-170949045-2-md.png 768w"  height="1131" width="1600" alt="岁的法国撒官方干哈然后就好热和" />
+      <figcaption>这是大标题</figcaption>
+    </figure>
+
+  <p>
+    撒啊大风格我是个
+  </p>
             ]]>
         </content>
     </entry>
