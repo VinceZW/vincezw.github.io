@@ -1,0 +1,13 @@
+ # 对 css 和 js 资源的 cdn 加速配置
+ cdn:
+     jsdelivr:
+         enabled: true
+  
+#---------------- 修改 _layouts 里的文件，给名为 assets_base_url 的变量赋值，用它来代表加载静态资源的根路径-----------------
+ {% assign assets_base_url = site.url %}
+ {% if site.cdn.jsdelivr.enabled %}
+     {% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+ {% endif %}
+ 
+  - <link rel="stylesheet" href="{{ site.url }}/assets/css/posts/index.css">
+ + <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/posts/index.css">
