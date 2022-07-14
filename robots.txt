@@ -1,3 +1,2 @@
 User-agent: *
-Disallow:
-Sitemap: https://vincezw.github.io/sitemap.xml
+Disallow: /
