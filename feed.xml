@@ -3,12 +3,65 @@
     <title>Vince 自习室</title>
     <link href="https://vincezw.github.io/feed.xml" rel="self" />
     <link href="https://vincezw.github.io" />
-    <updated>2022-07-21T10:14:33+08:00</updated>
+    <updated>2022-07-28T16:27:44+08:00</updated>
     <author>
         <name>Vince清慕</name>
     </author>
     <id>https://vincezw.github.io</id>
 
+    <entry>
+        <title>【MaxScript】一键切换视口纹理显示</title>
+        <author>
+            <name>Vince清慕</name>
+        </author>
+        <link href="https://vincezw.github.io/maxscript-yi-jian-qie-huan-shi-kou-wen-li-xian-shi.html"/>
+        <id>https://vincezw.github.io/maxscript-yi-jian-qie-huan-shi-kou-wen-li-xian-shi.html</id>
+
+        <updated>2022-07-28T16:27:44+08:00</updated>
+            <summary>
+                <![CDATA[
+                    macroScript&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <pre class="line-numbers  language-javascript"><code>macroScript 视口纹理显示
+category:"工具箱             toolbox"
+tooltip:"在视口中显示纹理"
+buttontext:"显示纹理"
+Icon:#("ShowIcon",01)
+(
+    local state = false --此变量位于宏中并控制其检查状态
+   
+    fn ShowTextures newState =
+    (
+        for matClass in material.classes do (
+            for m in (getclassinstances matClass processChildren:true) do (
+                if (refs.dependentNodes m).count&gt;0 then (
+                    if classof m != Multimaterial then (
+                        if (classOf m)==FStorm then (
+                            if (classOf m.diffuse_tex)==FStormBitmap then showTexturemap m m.diffuse_tex newState
+                        ) else (
+                            showTexturemap m newState
+                        )
+                    )
+                )
+            )
+        )
+    )
+   
+    on isChecked return state --选中或取消选中宏按钮
+    on execute do --如果按下宏按钮
+    (
+        state = not state --切换选中状态
+        setWaitCursor()
+        ShowTextures state
+        setArrowCursor()
+    )
+)</code></pre>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>我的常用工具</title>
         <author>
@@ -18,22 +71,27 @@
         <id>https://vincezw.github.io/wo-de-chang-yong-gong-ju.html</id>
             <category term="博客"/>
 
-        <updated>2022-07-21T10:14:33+08:00</updated>
+        <updated>2022-07-28T16:21:36+08:00</updated>
             <summary>
                 <![CDATA[
-                    数码小站 链接：https://pan.baidu.com/s/1bZqxJ_bQUPgdM9cdBvvbiw?pwd=3y8d 提取码：3y8d 链接：https://pan.baidu.com/s/1Yr_tedRV7w0bM1mh9Ldu3A?pwd=ddot 提取码：ddot 链接：https://pan.baidu.com/s/1xwyvMr501jbLQYIuqz74LA?pwd=rcqk 提取码：rcqk 链接：https://pan.baidu.com/s/1YGTaiX9Fhf1VUbtm-5Vo-g?pwd=h899 提取码：h899
+                        <img src="https://vincezw.github.io/media/posts/27/Blog-Gong-Ju.png" alt="这是替代文字" />
+                    这里寄存着我常用的一些工具。这里寄存着我常用的一些工具。这里寄存着我常用的一些工具。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h1>数码小站</h1>
+                    <img src="https://vincezw.github.io/media/posts/27/Blog-Gong-Ju.png" alt="这是替代文字" />
+                <p class="msg msg--info">这里寄存着我常用的一些工具。这里寄存着我常用的一些工具。这里寄存着我常用的一些工具。</p>
+<h5>数码小站</h5>
 <p>链接：<a href="https://pan.baidu.com/s/1bZqxJ_bQUPgdM9cdBvvbiw?pwd=3y8d">https://pan.baidu.com/s/1bZqxJ_bQUPgdM9cdBvvbiw?pwd=3y8d </a><br>提取码：3y8d</p>
-<h1>微软运行库</h1>
+<h5>微软运行库</h5>
 <p>链接：<a href="https://pan.baidu.com/s/1Yr_tedRV7w0bM1mh9Ldu3A?pwd=ddot">https://pan.baidu.com/s/1Yr_tedRV7w0bM1mh9Ldu3A?pwd=ddot </a><br>提取码：ddot</p>
-<h1>DirectX修复工具</h1>
+<h5>DirectX修复工具</h5>
 <p>链接：<a href="https://pan.baidu.com/s/1xwyvMr501jbLQYIuqz74LA?pwd=rcqk">https://pan.baidu.com/s/1xwyvMr501jbLQYIuqz74LA?pwd=rcqk </a><br>提取码：rcqk</p>
-<h1>超级卸载工具</h1>
+<h5>超级卸载工具</h5>
 <p>链接：<a href="https://pan.baidu.com/s/1YGTaiX9Fhf1VUbtm-5Vo-g?pwd=h899">https://pan.baidu.com/s/1YGTaiX9Fhf1VUbtm-5Vo-g?pwd=h899 </a><br>提取码：h899</p>
+<p> </p>
+<div><code></code></div>
             ]]>
         </content>
     </entry>
@@ -46,12 +104,18 @@
         <id>https://vincezw.github.io/xin-xing-guan-zhuang-bing-du.html</id>
             <category term="TIPS"/>
 
-        <updated>2022-07-19T17:39:53+08:00</updated>
-            <summary></summary>
+        <updated>2022-07-28T14:13:48+08:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://vincezw.github.io/media/posts/26/770x600_Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001-xl.png" alt="" />
+                    这是新冠病毒这是新冠病毒这是新冠病毒这是新冠病毒
+                ]]>
+            </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://vincezw.github.io/media/posts/26/Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001.png" alt="" />
-                <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="添加图像" data-columns="2">
+                    <img src="https://vincezw.github.io/media/posts/26/770x600_Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001-xl.png" alt="" />
+                <p class="msg msg--info">这是新冠病毒这是新冠病毒这是新冠病毒这是新冠病毒</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="添加图像" data-columns="2">
 <figure class="gallery__item"><a href="https://vincezw.github.io/media/posts/26/gallery/Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001.png" data-size="1920x1080"><img loading="lazy" src="https://vincezw.github.io/media/posts/26/gallery/Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001-thumbnail.png" alt="" width="720" height="405"></a></figure>
 <figure class="gallery__item"><a href="https://vincezw.github.io/media/posts/26/gallery/Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001_VRayCryptomatte-2.png" data-size="1920x1080"><img loading="lazy" src="https://vincezw.github.io/media/posts/26/gallery/Xin-Xing-Guan-Zhuang-Bing-Du-2_PhysCamera001_VRayCryptomatte-2-thumbnail.png" alt="" width="720" height="405"></a></figure>
 </div></div>
@@ -59,7 +123,7 @@
         </content>
     </entry>
     <entry>
-        <title>tyflow粒子-奇异博士传送门</title>
+        <title>TF粒子-奇异博士传送门</title>
         <author>
             <name>Vince清慕</name>
         </author>
@@ -67,11 +131,11 @@
         <id>https://vincezw.github.io/tyflowli-zi-qi-yi-bo-shi-chuan-song-men.html</id>
             <category term="TIPS"/>
 
-        <updated>2022-07-19T17:40:01+08:00</updated>
+        <updated>2022-07-28T14:16:04+08:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://vincezw.github.io/media/posts/25/Feng-Mi-Liu-Lan-Qi_Snipaste_2021-12-01_10-25-00.png" alt="" />
+                    <img src="https://vincezw.github.io/media/posts/25/770x600_Feng-Mi-Liu-Lan-Qi_Snipaste_2021-12-01_10-25-00-xl.png" alt="" />
                 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="添加图像" data-columns="3">
 <figure class="gallery__item"><a href="https://vincezw.github.io/media/posts/25/gallery/Feng-Mi-Liu-Lan-Qi_Snipaste_2021-12-01_10-25-00.png" data-size="1600x1060"><img loading="lazy" src="https://vincezw.github.io/media/posts/25/gallery/Feng-Mi-Liu-Lan-Qi_Snipaste_2021-12-01_10-25-00-thumbnail.png" alt="" width="720" height="477"></a></figure>
 <figure class="gallery__item"><a href="https://vincezw.github.io/media/posts/25/gallery/Feng-Mi-Liu-Lan-Qi_Snipaste_2021-12-01_10-24-42.png" data-size="1600x1060"><img loading="lazy" src="https://vincezw.github.io/media/posts/25/gallery/Feng-Mi-Liu-Lan-Qi_Snipaste_2021-12-01_10-24-42-thumbnail.png" alt="" width="720" height="477"></a></figure>
@@ -108,13 +172,13 @@
         </author>
         <link href="https://vincezw.github.io/pi-liang-xuan-ran-chu-li-112beta.html"/>
         <id>https://vincezw.github.io/pi-liang-xuan-ran-chu-li-112beta.html</id>
-            <category term="开源"/>
+            <category term="下载"/>
 
         <updated>2022-07-20T11:12:52+08:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://vincezw.github.io/media/posts/23/Snipaste_2022-07-19_17-24-34.png" alt="" />
-                    还有很多bug还没有修完。目前是实验阶段beta版本。用了反馈问题给我记得 批量渲染下载地址： 链接：https://pan.baidu.com/s/1oW9segXuBameEVkxJvIXyA 提取码：bar1
+                    还有很多bug还没有修完。目前是实验阶段beta版本。用了反馈问题给我记得&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -258,17 +322,17 @@
         <link href="https://vincezw.github.io/guan-yu-wo.html"/>
         <id>https://vincezw.github.io/guan-yu-wo.html</id>
 
-        <updated>2022-07-20T11:03:06+08:00</updated>
+        <updated>2022-07-28T14:42:51+08:00</updated>
             <summary>
                 <![CDATA[
-                    坐标成都，我是一名CG艺术工作者，毕业于四川传媒学院数字媒体系，曾在北京和上海担任3D场景设计和后期制作。工作5年主要从事于：三维增强现实（AR）场景设计、数字孪生场景设计、三维动画宣传片等。 ​3D Max, C4D, SU, TM, Vray, Redshift, Photoshop, AE,&hellip;
+                    坐标成都，我是一名CG艺术工作者，毕业于四川传媒学院数字媒体系，曾在北京和上海担任3D场景设计和后期制作。工作5年主要从事于：三维增强现实（AR）场景设计、数字孪生场景设计、三维动画宣传片等。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>坐标成都，我是一名CG艺术工作者，毕业于四川传媒学院数字媒体系，曾在北京和上海担任3D场景设计和后期制作。工作5年主要从事于：三维增强现实（AR）场景设计、数字孪生场景设计、三维动画宣传片等。</p>
 <h4>使用软件</h4>
-<p>​3D Max, C4D, SU, TM, Vray, Redshift, Photoshop, AE, SpeedTree, World Creator, City Engine,Unreal Engine</p>
+<p>3Ds Max、Cinema 4D、SketchUp、Twinmotion、UnrealEngine、CityEngine、V-Ray、Redshift、Photoshop、AfterEffects、SpeedTree、WorldCreator、</p>
 <h4>参与项目</h4>
 <p><strong>2022</strong><br>数字孪生3D园区、Tory智能边缘网关宣传片、崇州智慧治理演示、四川省政法大数据平台交通运输运行监测与应急指挥系统<br><strong>2021</strong><br>广西百色主题可视化、南京MIU主题宣传动画、武汉Boomshake可视化、南京城市交通大脑<br><strong>2020</strong><br>PPTV体育《中超联赛虚拟AR》 、江苏卫视《新闻眼》、上海中学《AR演示》、镇江教育局《虚拟AR植入》、济宁电视台《虚拟演播厅》、宁波大红鹰学院《虚拟前景AR》<br><strong>2019</strong><br>中国移动《十三届咪咕音乐汇》、浙江卫视《娱乐高八度》、印度JAYA-TV《超现实演播厅》<br>印度ZEEL&amp;TV《印度好声音》、腾讯视频《即可电音》、余杭电力局 《大屏可视化》、武汉电视台 《电视问政》<br><strong>2018</strong><br>四川联通数字城市峰会、SCTV《金熊猫新闻》、腾讯QQ音乐《由你音乐榜》、浙江卫视《跨年演唱会》<br><strong>2017</strong><br>CCTV-10 《科技之光》、台湾艺大《虚拟AR演示》、吉林卫视《吉林新闻联播》、贵州卫视《十九大特别报道》、香港尖沙咀《虚拟AR-中国篇》</p>
 <h4>博客寄语</h4>
@@ -279,44 +343,6 @@
 </ul>
 <h3 class="align-center msg--highlight  msg--info msg--success">我的个人微信号</h3>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://pic.imgdb.cn/item/62d76d33f54cd3f937309644.jpg" data-is-external-image="true"  alt="Vince的个人微信号" width="400" height="400"></figure>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>《网站访问和使用条款》</title>
-        <author>
-            <name>Vince清慕</name>
-        </author>
-        <link href="https://vincezw.github.io/lesslesswang-zhan-fang-wen-he-shi-yong-tiao-kuangreatergreater.html"/>
-        <id>https://vincezw.github.io/lesslesswang-zhan-fang-wen-he-shi-yong-tiao-kuangreatergreater.html</id>
-            <category term="条规"/>
-
-        <updated>2022-07-19T17:33:05+08:00</updated>
-            <summary>
-                <![CDATA[
-                    请仔细阅读本网站访问和使用条款. 本文件包含有关网站的访问和使用条款(以下简称”本条款”)的重要信息,网站的网址为:www.vincefx.cn(以下简称&quot;本网站&quot;).本条款适用于发布本网站的公司及本网站的所有用户(以下简称&quot;用户&quot;). 本网站仅供参考之用.因此,本网站专门服务于两类人群:欠缺经验的新手或想通过本站提升工作效率的人员.如果您不属于上述人员和人士,请斟酌时间和成本,因为本网站不是旨在为您而提供服务. 通常情况下,我们建议您,在向网站咨询意见之前一定要征求您的朋友的意见. 如果您访问本网站及其内容,或使用本网站提供的任何服务,则表明您完全毫无保留地接受下文定义的本条款,并且无论您是否是专业人员,您都同意受本条款无期限的约束.本条款包括责任限制条款、责任免除条款以及关于处理任何争议的管辖权条款. 通过访问本网站,您确认了解发布商的隐私和数据保护政策,该政策可在以下网址获得: 本条款可在不事先通知您的情况下进行修改.任何访问本网站的人士均可通过本网站任何页面提供的链接,注意到本条款的修改.因此,请定期查看本条款及其更新. 如果您不接受本条款的全部或部分内容,请勿使用本网站并请退出本网站: www.vincefx.cn(以下简称&quot;本网站&quot;).本条款适用于发布本网站的公司及本网站的所有用户(以下简称&quot;用户&quot;). 本条款仅适用于本网站的访问和使用.本条款不会修改您与发布商达成的任何其他协议的条款或条件.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>请仔细阅读本网站访问和使用条款.</p>
-<ol>
-<li><p>本文件包含有关网站的访问和使用条款(以下简称”本条款”)的重要信息,网站的网址为:<a href="http://www.vincefx.cn(%E4%BB%A5%E4%B8%8B%E7%AE%80%E7%A7%B0&quot;%E6%9C%AC%E7%BD%91%E7%AB%99&quot;).%E6%9C%AC%E6%9D%A1%E6%AC%BE%E9%80%82%E7%94%A8%E4%BA%8E%E5%8F%91%E5%B8%83%E6%9C%AC%E7%BD%91%E7%AB%99%E7%9A%84%E5%85%AC%E5%8F%B8%E5%8F%8A%E6%9C%AC%E7%BD%91%E7%AB%99%E7%9A%84%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7(%E4%BB%A5%E4%B8%8B%E7%AE%80%E7%A7%B0&quot;%E7%94%A8%E6%88%B7&quot;)">www.vincefx.cn(以下简称&quot;本网站&quot;).本条款适用于发布本网站的公司及本网站的所有用户(以下简称&quot;用户&quot;)</a>.</p>
-</li>
-<li><p>本网站仅供参考之用.因此,本网站专门服务于两类人群:欠缺经验的新手或想通过本站提升工作效率的人员.如果您不属于上述人员和人士,请斟酌时间和成本,因为本网站不是旨在为您而提供服务.
-通常情况下,我们建议您,在向网站咨询意见之前一定要征求您的朋友的意见.</p>
-</li>
-<li><p>如果您访问本网站及其内容,或使用本网站提供的任何服务,则表明您完全毫无保留地接受下文定义的本条款,并且无论您是否是专业人员,您都同意受本条款无期限的约束.本条款包括责任限制条款、责任免除条款以及关于处理任何争议的管辖权条款.
-通过访问本网站,您确认了解发布商的隐私和数据保护政策,该政策可在以下网址获得:</p>
-</li>
-<li><p>本条款可在不事先通知您的情况下进行修改.任何访问本网站的人士均可通过本网站任何页面提供的链接,注意到本条款的修改.因此,请定期查看本条款及其更新.
-如果您不接受本条款的全部或部分内容,请勿使用本网站并请退出本网站:
-<a href="http://www.vincefx.cn(%E4%BB%A5%E4%B8%8B%E7%AE%80%E7%A7%B0&quot;%E6%9C%AC%E7%BD%91%E7%AB%99&quot;).%E6%9C%AC%E6%9D%A1%E6%AC%BE%E9%80%82%E7%94%A8%E4%BA%8E%E5%8F%91%E5%B8%83%E6%9C%AC%E7%BD%91%E7%AB%99%E7%9A%84%E5%85%AC%E5%8F%B8%E5%8F%8A%E6%9C%AC%E7%BD%91%E7%AB%99%E7%9A%84%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7(%E4%BB%A5%E4%B8%8B%E7%AE%80%E7%A7%B0&quot;%E7%94%A8%E6%88%B7&quot;)">www.vincefx.cn(以下简称&quot;本网站&quot;).本条款适用于发布本网站的公司及本网站的所有用户(以下简称&quot;用户&quot;)</a>.</p>
-</li>
-<li><p>本条款仅适用于本网站的访问和使用.本条款不会修改您与发布商达成的任何其他协议的条款或条件.</p>
-</li>
-</ol>
-
             ]]>
         </content>
     </entry>
