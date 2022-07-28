@@ -12,16 +12,17 @@
         {
             "id": "https://vincezw.github.io/maxscript-yi-jian-qie-huan-shi-kou-wen-li-xian-shi.html",
             "url": "https://vincezw.github.io/maxscript-yi-jian-qie-huan-shi-kou-wen-li-xian-shi.html",
-            "title": "【MaxScript】一键切换视口纹理显示",
+            "title": "一键切换视口纹理显示",
             "summary": "macroScript&hellip;",
             "content_html": "<pre class=\"line-numbers  language-javascript\"><code>macroScript 视口纹理显示\ncategory:\"工具箱             toolbox\"\ntooltip:\"在视口中显示纹理\"\nbuttontext:\"显示纹理\"\nIcon:#(\"ShowIcon\",01)\n(\n    local state = false --此变量位于宏中并控制其检查状态\n   \n    fn ShowTextures newState =\n    (\n        for matClass in material.classes do (\n            for m in (getclassinstances matClass processChildren:true) do (\n                if (refs.dependentNodes m).count&gt;0 then (\n                    if classof m != Multimaterial then (\n                        if (classOf m)==FStorm then (\n                            if (classOf m.diffuse_tex)==FStormBitmap then showTexturemap m m.diffuse_tex newState\n                        ) else (\n                            showTexturemap m newState\n                        )\n                    )\n                )\n            )\n        )\n    )\n   \n    on isChecked return state --选中或取消选中宏按钮\n    on execute do --如果按下宏按钮\n    (\n        state = not state --切换选中状态\n        setWaitCursor()\n        ShowTextures state\n        setArrowCursor()\n    )\n)</code></pre>",
+            "image": "https://vincezw.github.io/media/posts/29/Xian-Shi.png",
             "author": {
                 "name": "Vince清慕"
             },
             "tags": [
             ],
             "date_published": "2022-07-28T16:27:44+08:00",
-            "date_modified": "2022-07-28T16:27:44+08:00"
+            "date_modified": "2022-07-28T17:53:14+08:00"
         },
         {
             "id": "https://vincezw.github.io/wo-de-chang-yong-gong-ju.html",
@@ -34,10 +35,10 @@
                 "name": "Vince清慕"
             },
             "tags": [
-                   "博客"
+                   "下载"
             ],
             "date_published": "2022-07-21T10:13:59+08:00",
-            "date_modified": "2022-07-28T16:21:36+08:00"
+            "date_modified": "2022-07-28T17:26:22+08:00"
         },
         {
             "id": "https://vincezw.github.io/xin-xing-guan-zhuang-bing-du.html",
