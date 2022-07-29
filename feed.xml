@@ -3,7 +3,7 @@
     <title>Vince 自习室</title>
     <link href="https://vincezw.github.io/feed.xml" rel="self" />
     <link href="https://vincezw.github.io" />
-    <updated>2022-07-29T10:55:13+08:00</updated>
+    <updated>2022-07-29T11:06:57+08:00</updated>
     <author>
         <name>Vince清慕</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://vincezw.github.io/qqhao.html"/>
         <id>https://vincezw.github.io/qqhao.html</id>
 
-        <updated>2022-07-29T10:55:13+08:00</updated>
+        <updated>2022-07-29T10:56:46+08:00</updated>
             <summary>
                 <![CDATA[
                     用手机QQ扫一扫，添加我为好友
@@ -40,17 +40,18 @@
         <link href="https://vincezw.github.io/wei-xin-gong-zhong-hao.html"/>
         <id>https://vincezw.github.io/wei-xin-gong-zhong-hao.html</id>
 
-        <updated>2022-07-29T10:52:00+08:00</updated>
+        <updated>2022-07-29T11:06:57+08:00</updated>
             <summary>
                 <![CDATA[
-                    扫一扫关注 微信公众号
+                    扫一扫二维码 添加微信公众号
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://pic.imgdb.cn/item/62e346d0f54cd3f9374c5884.jpg" data-is-external-image="true"  alt="扫一扫关注 微信公众号" width="344" height="344"></figure>
-<figcaption >扫一扫关注 微信公众号</figcaption>
+                <figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://pic.imgdb.cn/item/62e346d0f54cd3f9374c5884.jpg" data-is-external-image="true"  alt="" width="344" height="344"></figure>
+<figcaption >扫一扫二维码 添加微信公众号</figcaption>
 </figure>
+<p> </p>
             ]]>
         </content>
     </entry>
