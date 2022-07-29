@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://vincezw.github.io/wei-xin-gong-zhong-hao.html",
+            "url": "https://vincezw.github.io/wei-xin-gong-zhong-hao.html",
+            "title": "微信公众号",
+            "summary": "扫一扫关注 微信公众号",
+            "content_html": "<figure ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://pic.imgdb.cn/item/62e346d0f54cd3f9374c5884.jpg\" data-is-external-image=\"true\"  alt=\"扫一扫关注 微信公众号\" width=\"344\" height=\"344\"></figure>\n<figcaption >扫一扫关注 微信公众号</figcaption>\n</figure>",
+            "author": {
+                "name": "Vince清慕"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-07-29T10:38:31+08:00",
+            "date_modified": "2022-07-29T10:38:35+08:00"
+        },
+        {
             "id": "https://vincezw.github.io/maxscript-yi-jian-qie-huan-shi-kou-wen-li-xian-shi.html",
             "url": "https://vincezw.github.io/maxscript-yi-jian-qie-huan-shi-kou-wen-li-xian-shi.html",
             "title": "一键切换视口纹理显示",
@@ -23,6 +37,22 @@
             ],
             "date_published": "2022-07-28T16:27:44+08:00",
             "date_modified": "2022-07-28T17:53:14+08:00"
+        },
+        {
+            "id": "https://vincezw.github.io/xian-shi.html",
+            "url": "https://vincezw.github.io/xian-shi.html",
+            "title": "3ds Max启动时出现的MAXScript错误",
+            "summary": "本页提供解决3ds&hellip;",
+            "content_html": "<p class=\"msg msg--info msg--highlight  msg--success\" data-mpa-powered-by=\"yiban.io\">本页提供解决3ds Max启动时出现的与V-Ray相关的MAXScript错误的解决方案。</p>\n<p data-mpa-powered-by=\"yiban.io\"><strong>问题：</strong>在3ds Max启动时，MAXScript可能会弹出以下错误消息：</p>\n<p><img loading=\"lazy\" src=\"https://pic.imgdb.cn/item/62e33efdf54cd3f937233a90.png\" data-is-external-image=\"true\" ></p>\n<p align=\"center\"><img loading=\"lazy\" src=\"https://pic.imgdb.cn/item/62e33efdf54cd3f937233aa0.png\" data-is-external-image=\"true\" ></p>\n<p>该错误通常是由于之前的V-Ray安装遗留文件或由于产品的不正确安装/卸载引起的。</p>\n<h3>解决方案1</h3>\n<p>解决此类错误的快速方法是，按照以下步骤将3ds Max设置重置为默认设置。重置3ds Max设置会影响所有用户进行的UI自定义。它还可能会影响其他插件。</p>\n<ol class=\"list-paddingleft-2\">\n<li>关闭任何正在运行的3ds Max会话。</li>\n<li>导航到以下路径：C：\\ Users \\％username％\\ AppData \\ Local \\ Autodesk \\ 3dsMax \\</li>\n<li>打开当前安装的文件夹：即2020-64bit。</li>\n<li>将ENU文件夹重命名为ENU_old。</li>\n</ol>\n<p>随着3ds Max的启动，将自动创建一个新的<em>ENU</em>文件夹，并且该问题应得到解决。但是，如果问题没有解决，您可以通过删除新恢复的3ds Max设置<em>ENU</em>文件夹和重命名<em>ENU_old</em>夹回<em>ENU</em>。</p>\n<h3>解决方案1</h3>\n<p>另一个解决方案是找到损坏的脚本并将其从3ds Max启动文件夹中删除。</p>\n<ol class=\"list-paddingleft-2\">\n<li>从弹出消息或MAXScript编辑器中找到脚本文件名。<img loading=\"lazy\" src=\"https://pic.imgdb.cn/item/62e33efdf54cd3f937233acd.png\" data-is-external-image=\"true\" ></li>\n<li>导航到3ds Max启动文件夹：C：\\ Program Files \\ Autodesk \\ 3ds Max &lt;Version&gt; \\ scripts \\ Startup</li>\n<li>删除脚本文件。</li>\n<li>重新安装V-Ray。</li>\n</ol>\n<h2 class=\"align-center\"><strong>结论</strong></h2>\n<p class=\"align-center\"><strong>如果上述解决方案不能解决问题，请访问官方网页获取资讯及技术支持。</strong></p>",
+            "image": "https://vincezw.github.io/media/posts/28/3ds-MaxQi-Dong-Shi-Chu-Xian-De-MAXScriptCuo-Wu-2-2.png",
+            "author": {
+                "name": "Vince清慕"
+            },
+            "tags": [
+                   "博客"
+            ],
+            "date_published": "2022-07-28T16:10:54+08:00",
+            "date_modified": "2022-07-29T10:16:48+08:00"
         },
         {
             "id": "https://vincezw.github.io/wo-de-chang-yong-gong-ju.html",
@@ -133,35 +163,6 @@
             ],
             "date_published": "2022-07-19T16:58:35+08:00",
             "date_modified": "2022-07-19T17:07:01+08:00"
-        },
-        {
-            "id": "https://vincezw.github.io/ue5-bridge-or-zhi-zuo-chang-jing-lesslessdong-xuegreatergreater.html",
-            "url": "https://vincezw.github.io/ue5-bridge-or-zhi-zuo-chang-jing-lesslessdong-xuegreatergreater.html",
-            "title": "【UE5 &amp; Bridge】制作场景《洞穴》",
-            "content_html": "<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-translation=\"添加图像\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://vincezw.github.io/media/posts/20/gallery/images-1.png\" data-size=\"3840x2160\"><img loading=\"lazy\" src=\"https://vincezw.github.io/media/posts/20/gallery/images-1-thumbnail.png\" alt=\"\" width=\"720\" height=\"405\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://vincezw.github.io/media/posts/20/gallery/images-2.png\" data-size=\"3840x2160\"><img loading=\"lazy\" src=\"https://vincezw.github.io/media/posts/20/gallery/images-2-thumbnail.png\" alt=\"\" width=\"720\" height=\"405\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://vincezw.github.io/media/posts/20/gallery/images-3.png\" data-size=\"3840x2160\"><img loading=\"lazy\" src=\"https://vincezw.github.io/media/posts/20/gallery/images-3-thumbnail.png\" alt=\"\" width=\"720\" height=\"405\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://vincezw.github.io/media/posts/20/gallery/images-4.png\" data-size=\"3840x2160\"><img loading=\"lazy\" src=\"https://vincezw.github.io/media/posts/20/gallery/images-4-thumbnail.png\" alt=\"\" width=\"720\" height=\"405\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://vincezw.github.io/media/posts/20/gallery/images-5.png\" data-size=\"3840x2160\"><img loading=\"lazy\" src=\"https://vincezw.github.io/media/posts/20/gallery/images-5-thumbnail.png\" alt=\"\" width=\"720\" height=\"405\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://vincezw.github.io/media/posts/20/gallery/images-6.png\" data-size=\"3840x2160\"><img loading=\"lazy\" src=\"https://vincezw.github.io/media/posts/20/gallery/images-6-thumbnail.png\" alt=\"\" width=\"720\" height=\"405\"></a></figure>\n</div></div>",
-            "image": "https://vincezw.github.io/media/posts/20/images-2.png",
-            "author": {
-                "name": "Vince清慕"
-            },
-            "tags": [
-                   "画廊"
-            ],
-            "date_published": "2022-07-19T16:39:50+08:00",
-            "date_modified": "2022-07-19T17:04:52+08:00"
-        },
-        {
-            "id": "https://vincezw.github.io/guan-yu-wo.html",
-            "url": "https://vincezw.github.io/guan-yu-wo.html",
-            "title": "关于我",
-            "summary": "坐标成都，我是一名CG艺术工作者，毕业于四川传媒学院数字媒体系，曾在北京和上海担任3D场景设计和后期制作。工作5年主要从事于：三维增强现实（AR）场景设计、数字孪生场景设计、三维动画宣传片等。&hellip;",
-            "content_html": "<p>坐标成都，我是一名CG艺术工作者，毕业于四川传媒学院数字媒体系，曾在北京和上海担任3D场景设计和后期制作。工作5年主要从事于：三维增强现实（AR）场景设计、数字孪生场景设计、三维动画宣传片等。</p>\n<h4>使用软件</h4>\n<p>3Ds Max、Cinema 4D、SketchUp、Twinmotion、UnrealEngine、CityEngine、V-Ray、Redshift、Photoshop、AfterEffects、SpeedTree、WorldCreator、</p>\n<h4>参与项目</h4>\n<p><strong>2022</strong><br>数字孪生3D园区、Tory智能边缘网关宣传片、崇州智慧治理演示、四川省政法大数据平台交通运输运行监测与应急指挥系统<br><strong>2021</strong><br>广西百色主题可视化、南京MIU主题宣传动画、武汉Boomshake可视化、南京城市交通大脑<br><strong>2020</strong><br>PPTV体育《中超联赛虚拟AR》 、江苏卫视《新闻眼》、上海中学《AR演示》、镇江教育局《虚拟AR植入》、济宁电视台《虚拟演播厅》、宁波大红鹰学院《虚拟前景AR》<br><strong>2019</strong><br>中国移动《十三届咪咕音乐汇》、浙江卫视《娱乐高八度》、印度JAYA-TV《超现实演播厅》<br>印度ZEEL&amp;TV《印度好声音》、腾讯视频《即可电音》、余杭电力局 《大屏可视化》、武汉电视台 《电视问政》<br><strong>2018</strong><br>四川联通数字城市峰会、SCTV《金熊猫新闻》、腾讯QQ音乐《由你音乐榜》、浙江卫视《跨年演唱会》<br><strong>2017</strong><br>CCTV-10 《科技之光》、台湾艺大《虚拟AR演示》、吉林卫视《吉林新闻联播》、贵州卫视《十九大特别报道》、香港尖沙咀《虚拟AR-中国篇》</p>\n<h4>博客寄语</h4>\n<ul>\n<li>在互联网发达的今天，我们能接触到海量的信息。如果我们想学习，也会有海量的资源教程；但在高效快速的生活中，人们的个人时间总是紧凑而稀少的。逐渐迷失眼花缭乱的教程视频，文章日志中。藉此机会，我想根据我所掌握的知识，帮大家在如此庞大的信息中甄别一些有用的，让它们成为一条条高密度而且简洁易懂的讯息。能够帮助大家在工作、生活之余带来轻松而又有价值的东西。</li>\n<li>目前是持续性更新中，因此也希望大家多多包涵和指正有错误纰漏的地方。我会通过个人空余时间去撰写更新，好事多磨。想把最好的呈现给大家就需要更优质的内容。</li>\n<li>关于这些看似无聊却又常见的问题，我将替大家找到合理的答案。也希望大家能及时指正出我文章中存在的错误或纰漏。我本着严谨科学的态度去寻找真正的正解。关于计算机的秘密也许我们还从未认真探索过。所以这不仅是简单的图形，而是一场关于科学的旅程！</li>\n</ul>\n<h3 class=\"align-center msg--highlight  msg--info msg--success\">我的个人微信号</h3>\n<figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://pic.imgdb.cn/item/62d76d33f54cd3f937309644.jpg\" data-is-external-image=\"true\"  alt=\"Vince的个人微信号\" width=\"400\" height=\"400\"></figure>",
-            "author": {
-                "name": "Vince清慕"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-07-19T15:47:42+08:00",
-            "date_modified": "2022-07-28T14:42:51+08:00"
         }
     ]
 }
